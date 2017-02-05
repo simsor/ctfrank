@@ -3,7 +3,7 @@
 
 ## Description
 
-ctfrank.py is a library which uses Requests and BeautifulSoup to get all the teams from a CTF website.
+ctfrank.py is a library which uses Requests and BeautifulSoup to get all the teams from a [CTF](https://github.com/isislab/CTFd) website.
 
 You can then get each team's rank and stuff.
 
