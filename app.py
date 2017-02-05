@@ -6,6 +6,7 @@ import json
 
 app = Flask(__name__)
 
+team_name = "Cryptis"
 ctfs_list = [
     ["AlexCTF", "https://ctf.oddcoder.com/"],
     ["BITSCTF", "https://bitsctf.bits-quark.org"]
@@ -27,7 +28,7 @@ def getctf(ctfname):
     for c in ctfs_list:
         if c[0] == ctfname:
             ctf = CTF(c[1])
-            team = ctf.get_team("Cryptis")
+            team = ctf.get_team(team_name)
             break
     if not ctf:
         return "no ctf by that name"
